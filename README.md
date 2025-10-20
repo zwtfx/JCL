@@ -27,7 +27,7 @@ dotnet add package JCL.Memory
 ```csharp
 using JCLM;
 // Attach to process (by name or PID)
-JCLM jcl = new JCLM("game.exe");
+JCLM jcl = new JCLM("game.exe", true); // true = 64bit | false = 32bit
 
 // Get module base
 IntPtr client = jcl.GetModuleBase("client.dll");
