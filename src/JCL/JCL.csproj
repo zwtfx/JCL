@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>JCL</AssemblyName>
+    <RootNamespace>JCL</RootNamespace>
+
+    <!-- NuGet metadata -->
+    <PackageId>JCL.Memory</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Gunner</Authors>
+    <Company>Gunner</Company>
+    <Description>Lightweight external process memory helper for 32/64-bit processes. Read/Write, pointer chaining, AoB scan, and more.</Description>
+    <PackageTags>memory;process;cheat;external;readprocessmemory;writeprocessmemory</PackageTags>
+    <RepositoryUrl>https://github.com/zwtfx/JCL/
+    <PackageReleaseNotes>Initial starter package.</PackageReleaseNotes>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+</Project>
