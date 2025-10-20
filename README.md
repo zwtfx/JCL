@@ -1,22 +1,11 @@
-# JCL — Starter
+# JCL.Memory
 
-
-## Usage
-
+Lightweight external process memory helper for 32/64-bit processes.
 
 ```csharp
-using (var jcl = new JCL.JCL("notepad"))
-{
-var baseAddr = jcl.GetModuleBase("notepad.exe");
-Console.WriteLine($"Base: 0x{baseAddr.ToInt64():X}");
+using JCL;
 
-
-// read int
-int x = jcl.ReadInt32(baseAddr + 0x1234);
-
-
-// pointer chain
-IntPtr final = jcl.ReadPointerChain(baseAddr + 0x1000, 0x10, 0x20, 0x8);
-var v = jcl.ReadInt32(final);
-}
+var jcl = new JCL("game.exe", true);
+IntPtr baseAddress = jcl.GetModuleBase("client.dll");
+int health = jcl.ReadInt(baseAddress + 0x123456);
 ```
