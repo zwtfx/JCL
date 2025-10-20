@@ -4,27 +4,22 @@
     <AssemblyName>JCL</AssemblyName>
     <RootNamespace>JCL</RootNamespace>
 
-    <!-- NuGet metadata -->
     <PackageId>JCL.Memory</PackageId>
     <Version>0.2.0</Version>
     <Authors>Gunner</Authors>
     <Company>Gunner</Company>
-    <Description>Lightweight external process memory helper for 32/64-bit processes. Read/Write, pointer chaining, AoB scan, and more.</Description>
+    <Description>Lightweight external process memory helper for 32/64-bit processes.</Description>
     <PackageTags>memory;process;external;readprocessmemory;writeprocessmemory</PackageTags>
     <RepositoryUrl>https://github.com/zwtfx/JCL</RepositoryUrl>
     <PackageProjectUrl>https://github.com/zwtfx/JCL</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
-
-    <!-- License & Readme -->
-    <PackageLicenseFile>../../LICENSE</PackageLicenseFile>
-    <PackageReadmeFile>../../README.md</PackageReadmeFile>
-
-    <PackageReleaseNotes>Initial starter package.</PackageReleaseNotes>
+    <PackageReleaseNotes>Fixed class naming and minor code cleanup.</PackageReleaseNotes>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="../../LICENSE" Pack="true" PackagePath="" />
     <None Include="../../README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 </Project>
