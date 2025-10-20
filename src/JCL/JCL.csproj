@@ -6,7 +6,7 @@
 
     <!-- NuGet metadata -->
     <PackageId>JCL.Memory</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <Authors>Gunner</Authors>
     <Company>Gunner</Company>
     <Description>Lightweight external process memory helper for 32/64-bit processes. Read/Write, pointer chaining, AoB scan, and more.</Description>
